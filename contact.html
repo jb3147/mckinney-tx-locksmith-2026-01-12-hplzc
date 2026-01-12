@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mckinney Locksmith</title>
+    <meta name="description" content="Contact Mckinney Locksmith for 24/7 emergency services. Licensed experts ready to assist with residential, commercial, and automotive lock needs.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#5B4BFF',
+                        secondary: '#EEF0FF',
+                        accent: '#00E5A8',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px rgba(0,0,0,0.08)',
+                        'glow': '0 0 20px rgba(91, 75, 255, 0.3)',
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1rem',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-white selection:bg-primary selection:text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
+                <!-- Logo (Exact copy) -->
+                <a href="index.html" class="text-2xl font-bold tracking-tight text-gray-900 group flex items-center gap-2">
+                    <span class="text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 group-hover:rotate-12 transition-transform duration-300">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                        </svg>
+                    </span>
+                    Mckinney Locksmith
+                </a>
+                
+                <!-- Back Link -->
+                <a href="index.html" class="font-medium text-gray-600 hover:text-primary transition-colors duration-300 flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-left text-sm"></i> Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 md:pt-40 md:pb-20 bg-secondary overflow-hidden">
+        <!-- Abstract Background Shape -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] bg-accent/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+                Contact <span class="text-primary">Us</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Have an emergency or need a quote? Reach out to our 24/7 support team. We're here to secure your home, business, and vehicle.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 md:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Left Column: Contact Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-100">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                    
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-6">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="redirect" value="false">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <div>
+                          <label for="name" class="block text-sm font-semibold mb-2 text-gray-700">Full Name *</label>
+                          <input type="text" name="name" id="name" required 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none transition-all focus:ring-2 focus:ring-primary focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="John Doe">
+                        </div>
+                        
+                        <div>
+                          <label for="email" class="block text-sm font-semibold mb-2 text-gray-700">Email Address *</label>
+                          <input type="email" name="email" id="email" required 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none transition-all focus:ring-2 focus:ring-primary focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="john@example.com">
+                        </div>
+                        
+                        <div>
+                          <label for="phone" class="block text-sm font-semibold mb-2 text-gray-700">Phone Number</label>
+                          <input type="tel" name="phone" id="phone" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none transition-all focus:ring-2 focus:ring-primary focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="+1 (555) 000-0000">
+                        </div>
+                        
+                        <div>
+                          <label for="message" class="block text-sm font-semibold mb-2 text-gray-700">Message *</label>
+                          <textarea name="message" id="message" required rows="5" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none resize-none transition-all focus:ring-2 focus:ring-primary focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn"
+                          class="w-full font-bold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] bg-primary text-white shadow-lg shadow-primary/30 hover:brightness-110">
+                          Send Message
+                        </button>
+                        
+                        <div id="form-message" class="mt-4 p-4 rounded-lg hidden bg-green-500 text-white font-medium text-center">
+                          ✓ Message sent successfully!
+                        </div>
+                      </form>
+                      
+                      <script>
+                        (function() {
+                          const form = document.getElementById('contact-form');
+                          const submitBtn = document.getElementById('submit-btn');
+                          const messageDiv = document.getElementById('form-message');
+                          
+                          form.addEventListener('submit', async (e) => {
+                            e.preventDefault();
+                            submitBtn.disabled = true;
+                            submitBtn.textContent = 'Sending...';
+                            
+                            try {
+                              const formData = new FormData(form);
+                              const response = await fetch('https://api.web3forms.com/submit', {
+                                method: 'POST',
+                                body: formData
+                              });
+                              
+                              const result = await response.json();
+                              
+                              if (result.success) {
+                                form.reset();
+                                messageDiv.classList.remove('hidden');
+                                submitBtn.textContent = 'Sent!';
+                                
+                                setTimeout(() => {
+                                  messageDiv.classList.add('hidden');
+                                  submitBtn.disabled = false;
+                                  submitBtn.textContent = 'Send Message';
+                                }, 5000);
+                              } else {
+                                throw new Error('Submission failed');
+                              }
+                            } catch (error) {
+                              submitBtn.disabled = false;
+                              submitBtn.textContent = 'Send Message';
+                              messageDiv.style.background = '#ef4444';
+                              messageDiv.textContent = '✗ Failed to send. Please try again.';
+                              messageDiv.classList.remove('hidden');
+                              
+                              setTimeout(() => {
+                                messageDiv.classList.add('hidden');
+                                messageDiv.style.background = '#22c55e';
+                                messageDiv.textContent = '✓ Message sent successfully!';
+                              }, 5000);
+                            }
+                          });
+                        })();
+                      </script>
+                </div>
+
+                <!-- Right Column: Business Info & Map -->
+                <div class="space-y-8">
+                    <!-- Info Card -->
+                    <div class="bg-secondary/50 p-8 rounded-2xl border border-primary/10">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                            <span class="w-2 h-8 bg-primary rounded-full"></span>
+                            Contact Information
+                        </h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 mb-1">Mckinney Locksmith</p>
+                                    <p class="text-gray-600">Spring Creek</p>
+                                    <p class="text-gray-600">Mckinney, Texas, 75044</p>
+                                    <p class="text-gray-600">United States</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 mb-1">Hours</p>
+                                    <p class="text-gray-600">Emergency Service: 24/7</p>
+                                    <p class="text-gray-600">Office: Mon-Fri 8am - 6pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="w-full">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 px-1">Find Us</h3>
+                        <div class="w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <iframe 
+                                width="100%" 
+                                height="100%" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                marginheight="0" 
+                                marginwidth="0" 
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=-180%2C-90%2C180%2C90&amp;layer=mapnik"
+                                style="border: 0;"
+                                loading="lazy"
+                                title="Business Location Map"
+                            ></iframe>
+                        </div>
+                        <script>
+                              // Geocode address and update map
+                              (function() {
+                                const address = "Spring Creek, Mckinney, Texas, 75044, United States";
+                                const iframe = document.querySelector('iframe[title="Business Location Map"]');
+                                
+                                fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(address))
+                                  .then(response => response.json())
+                                  .then(data => {
+                                    if (data && data.length > 0) {
+                                      const lat = parseFloat(data[0].lat);
+                                      const lon = parseFloat(data[0].lon);
+                                      const bbox = (lon - 0.01) + '%2C' + (lat - 0.01) + '%2C' + (lon + 0.01) + '%2C' + (lat + 0.01);
+                                      const marker = lat + '%2C' + lon;
+                                      iframe.src = 'https://www.openstreetmap.org/export/embed.html?bbox=' + bbox + '&layer=mapnik&marker=' + marker;
+                                    }
+                                  })
+                                  .catch(err => console.log('Map geocoding error:', err));
+                              })();
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2">
+                    <span class="text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                        </svg>
+                    </span>
+                    <span class="text-lg font-bold">Mckinney Locksmith</span>
+                </div>
+                
+                <p class="text-gray-400 text-sm">© <script>document.write(new Date().getFullYear())</script> Mckinney Locksmith. All rights reserved.</p>
+                
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
